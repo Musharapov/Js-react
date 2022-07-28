@@ -17,10 +17,10 @@ let classesNew = `${s.item} ${c2}`;
 const Navbar = () => {
     return <nav className={s.nav}>
         <div className={s.item}>
-            <a>Сериалы</a>
+            <a href="/profile">Сериалы</a>
         </div>
         <div className={`${s.item} ${s.active}`}>
-            <a>Фильмы</a>
+            <a href="/dialogs">Фильмы</a>
         </div>
         <div className={s.item}>
             <a>Шоу</a>
