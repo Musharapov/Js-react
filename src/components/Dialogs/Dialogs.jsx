@@ -2,13 +2,31 @@ import React from 'react'
 import s from './Dialogs.moduale.css';
 
 
-const Dialogs = (props) => {
+ const Dialogs = (props) => {
     return (
 
-        <div className={s.content}>
-            <div>
-                <img src='https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/dd78edfd-6a1f-486c-9a86-6acbca940418/300x450'/>
+        <div className="s.dialogs">
+            <div class="s.dialogsItems">
+                <div className="s.dialog">
+                    Sasha
+                </div>
+                <div className="s.dialog">
+                    Renat
+                </div>
+                <div className="s.dialog">
+                    Timur
+                </div>
+                <div className="dialog">
+                    Ilsur
+                </div>
             </div>
-        </div>)
+<div className="s.messages">
+    <div className="s.message">hi</div>
+    <div className="s.message">how a you</div>
+    <div className="s.message">ho hi</div>
+
+</div>
+        </div>
+    )
 }
-export default Dialogs;
+export  default Dialogs;

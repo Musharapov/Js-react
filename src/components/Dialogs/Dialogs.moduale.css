@@ -2,3 +2,18 @@
     grid-area: c;
     background-color: lavender;
 }
+
+
+.dialogs {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+    .dialogItems {
+        padding:  10px;
+    }
+
+.message{}
+.messages{
+    padding: 10px;
+}
