@@ -5,6 +5,7 @@ const Post = (props) => {
   console.log(props.message);
 
   return (
+
     <div className={s.item}>
       <img src='https://st.kp.yandex.net/images/movies/awardMtv.png'/>
       {props.message}
