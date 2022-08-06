@@ -4,6 +4,12 @@ import Post from './Post/Post';
 
 
 const MyPosts = () => {
+ let posts= [
+     {id: 1, message: 'Здорова. Что делаешь', likesCount:112},
+     {id: 2, message: 'Хай бухаю с Равилем', likesCount:112},
+ ]
+    let postsElements = posts.map(p =><Post message= {p.message} likesCount={p.likesCount}/>)
+
   return (
     <div>
       Написать коментарий
@@ -13,8 +19,7 @@ const MyPosts = () => {
 
       </div>
       <div className={s.posts}>
-        <Post message='Здорова. Что делаешь' likesCount="Ренат"/>
-        <Post message="Хай бухаю с Равилем" likesCount="Тимур"/>
+          {postsElements}
         <Post message="Го учить реакт" likesCount="Ренат"/>
         <Post message="Сейчас иду" likesCount="Тимур"/>
         <Post message="Меня эти post заебали не х не получается" likesCount="Ренат"/>
